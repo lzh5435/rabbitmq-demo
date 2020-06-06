@@ -16,6 +16,9 @@ gpgcheck=1
 gpgkey=https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc
 repo_gpgcheck=0
 enabled=1
+
+
+yum install erlang -y
 ````
 # 安装 rabbitmq的rpm包
 ````
