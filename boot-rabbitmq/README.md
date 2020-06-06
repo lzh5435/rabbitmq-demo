@@ -1,0 +1,1 @@
+# 依赖````<dependency>    <groupId>org.springframework.boot</groupId>    <artifactId>spring-boot-starter-amqp</artifactId></dependency>````# 操作````$xslt@AutowiredRabbitmqTemplate rabbitmqTemplate````# 扩展https://www.jianshu.com/p/2c5eebfd0e95
