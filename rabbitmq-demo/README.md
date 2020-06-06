@@ -1,5 +1,11 @@
 # 此demo是java对rabbitmq的操作学习 
 
+# ip
+````
+amqp        5672   内部通讯端口
+http        15672   
+clustering  25672
+````
 # centos7 安装 erlang
 ````
 vim /etc/yum.repos.d/rabbitmq-erlang.repo
