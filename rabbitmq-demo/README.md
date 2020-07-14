@@ -34,10 +34,12 @@ systemctl stop rabbitmq-server.service
 #状态查看
 ````
  rabbitmqctl status
- ````
+````
 #启用插件
+
 ````
 rabbitmq-plugins enable rabbitmq_management
+rabbitmq-plugins enable rabbitmq_delayed_message_exchange
 ````
 #重启服务
 ````

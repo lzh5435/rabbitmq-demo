@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import test.liuzehua.bootrabbitmq.rabbitmq.delayed.MessageServiceImpl;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,14 @@ class BootRabbitmqApplicationTests {
 
     @Autowired
     RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private MessageServiceImpl messageService;
+
+    @Test
+    public void send() {
+        messageService.sendMsg("test_queue_1","hello i am delay msg");
+    }
 
 //    路由模式 通配符
     @Test
